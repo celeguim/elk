@@ -1,0 +1,9 @@
+prospectors:     
+ - paths:        
+   - /var/log/containers/*          
+   document_type: syslog     
+output:
+ logstash:  
+  enabled: false  
+  hosts:   
+      - elk:5000

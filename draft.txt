@@ -1,0 +1,6 @@
+docker kill myfilebeat
+docker build . --no-cache --tag myfilebeat
+docker system prune
+docker -D run -it -d --name myfilebeat myfilebeat
+docker exec -it myfilebeat /bin/bash
+yum install net-tools

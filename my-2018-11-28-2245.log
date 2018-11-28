@@ -1,0 +1,10 @@
+2018-11-28 22:22:45,201 - my-2018-11-28-2245.log - DEBUG - debug message
+2018-11-28 22:22:45,201 - my-2018-11-28-2245.log - INFO - info message
+2018-11-28 22:22:45,201 - my-2018-11-28-2245.log - WARNING - warn message
+2018-11-28 22:22:45,201 - my-2018-11-28-2245.log - ERROR - error message
+2018-11-28 22:22:45,203 - my-2018-11-28-2245.log - CRITICAL - critical message
+2018-11-28 22:22:45,967 - my-2018-11-28-2245.log - DEBUG - debug message
+2018-11-28 22:22:45,967 - my-2018-11-28-2245.log - INFO - info message
+2018-11-28 22:22:45,967 - my-2018-11-28-2245.log - WARNING - warn message
+2018-11-28 22:22:45,967 - my-2018-11-28-2245.log - ERROR - error message
+2018-11-28 22:22:45,967 - my-2018-11-28-2245.log - CRITICAL - critical message
