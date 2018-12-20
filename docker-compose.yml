@@ -65,7 +65,31 @@ services:
     networks:
       - elk
 
-networks:
+  #Metricbeat container
+  metricbeat:
+    container_name: metricbeat
+    hostname: metricbeat
+    user: root
+    image: docker.elastic.co/beats/metricbeat:${ELK_VERSION}
+    volumes:
+      #Mount the metricbeat configuration so users can make edit
+      - .\beats\metricbeat\metricbeat.yml:/usr/share/metricbeat/metricbeat.yml
+      #Mount the modules.d directory into the container. This allows user to potentially make changes to the modules and they will be dynamically loaded.
+      - .\beats\metricbeat\modules.d\:/usr/share/metricbeat/modules.d/
+      # The commented sections below enable Metricbeat to monitor the Docker host rather than the Metricbeat container. These are used by the system module.
+      - /proc:/hostfs/proc:ro
+      - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro
+      #Allows us to report on docker from the hosts information
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: metricbeat -e -system.hostfs=/hostfs -E output.elasticsearch.username=elastic -E output.elasticsearch.password=${ES_PASSWORD} -strict.perms=false
+    networks: ['elk']
+    restart: on-failure
+    environment:
+      - "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}"
+    depends_on:
+      #wait for the these services to come up. This ensures the logs are available and ES exists for indexing
+      - elasticsearch
 
+networks:
   elk:
     driver: bridge

@@ -1,0 +1,12 @@
+2018-12-20 15:57:38,575 - 36 - WARNING  - warn message
+2018-12-20 15:57:38,575 - 37 - ERROR    - error message
+2018-12-20 15:57:38,575 - 38 - CRITICAL - critical message
+2018-12-20 15:57:48,967 - 36 - WARNING  - warn message
+2018-12-20 15:57:48,967 - 37 - ERROR    - error message
+2018-12-20 15:57:48,967 - 38 - CRITICAL - critical message
+2018-12-20 15:57:51,065 - 36 - WARNING  - warn message
+2018-12-20 15:57:51,065 - 37 - ERROR    - error message
+2018-12-20 15:57:51,065 - 38 - CRITICAL - critical message
+2018-12-20 15:57:56,043 - 36 - WARNING  - warn message
+2018-12-20 15:57:56,045 - 37 - ERROR    - error message
+2018-12-20 15:57:56,045 - 38 - CRITICAL - critical message

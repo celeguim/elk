@@ -1,0 +1,5 @@
+2018-12-20 15:57:43,634 - my-2018-12-20-5743.log - DEBUG - debug message
+2018-12-20 15:57:43,634 - my-2018-12-20-5743.log - INFO - info message
+2018-12-20 15:57:43,634 - my-2018-12-20-5743.log - WARNING - warn message
+2018-12-20 15:57:43,634 - my-2018-12-20-5743.log - ERROR - error message
+2018-12-20 15:57:43,634 - my-2018-12-20-5743.log - CRITICAL - critical message
